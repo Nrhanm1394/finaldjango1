@@ -1,0 +1,137 @@
+{% comment %} {% extends 'frontend/base.html' %} {% endcomment %}
+{% comment %} {% block title %} architecture {% endblock %} {% endcomment %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="style.css">
+      <title>{% block title2 %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static './lib/bootstrap/css/bootstrap.min.css' %}"> 
+    <link rel="stylesheet" href="{% static './lib/fontawesome/css/all.min.css' %}"> 
+ 
+</head>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body background="static/images/imagebg2.jpg">
+   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#A0522D;">
+        <a class="navbar-brand" href="{% url 'architecture' %}">ARCHITECTURE </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link px-1 mx-1 py-3 my-n2" href="{% url 'nature' %}" >Nature Travel</a>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="{% url 'architecture' %}" >Architecture Travel</a>
+                </li>
+            </ul>
+
+        </div>
+        <button type="button" class="btn btn-outline-warning"><a class="navbar-brand" href="{% url 'base' %}">Home</a></button>
+         <button type="button" class="btn btn-outline-warning"><a class="navbar-brand" href="{% url 'contact' %}">Contact</a></button>
+    </nav>    
+
+    <table>
+            <tr>
+                <th><ul class="nav justify-content-center">
+                    <li class="nav-item">
+                           <div class="container pt-3" >
+        <h1 >ARCHITECTURE</h1>
+        <h5 class="text-center"> สถาปัตยกรรม</h5>
+
+    </div>
+                    </li>
+                   
+                </ul></th>
+                <th></th>
+                <th></th>
+            </tr>
+ 
+                     <table class="container">
+                    <tr>
+                     <tr>
+                        <td>
+                        <h5 class="text-center">วาเลนเซีย(Valencia)</h5>
+                         <img src="static/images/architecวาเลนเซีย.jpg" class="center" alt="Cinque Terre" width="320" height="180" > 
+                         
+
+                        <p>เมืองแห่งศิลปะและวิทยาศาสตร์เป็นศูนย์นันทนาการในเมืองขนาดใหญ่สำหรับวัฒนธรรมและวิทยาศาสตร์ในเมืองวาเลนเซียประเทศสเปน ออกแบบโดยสถาปนิกชาวบาเลนเซีย Santiago Calatrava และเริ่มในเดือนกรกฎาคม 2539 เป็นตัวอย่างที่น่าประทับใจของสถาปัตยกรรมสมัยใหม่ ตั้งอยู่ในเตียงแม่น้ำที่แห้งแล้วของ Turia กึ่งกลางระหว่างเมืองเก่าของวาเลนเซียกับเขตชายฝั่งของ Nazaret เมืองแห่งศิลปะและวิทยาศาสตร์ครอบคลุมพื้นที่ 350,000 ตารางเมตร หลังจากเกิดอุทกภัยครั้งใหญ่ในปีพ. ศ. 2507 แม่น้ำก็ถูกเบี่ยงเบนไปตามลำคลองทางตอนใต้ของเมืองและแม่น้ำที่แห้งแล้วกลายเป็นสวนสาธารณะที่งดงามซึ่งเป็นเมืองแห่งศิลปะและวิทยาศาสตร์ ล้อมรอบด้วยลำธารและสระว่ายน้ำที่สวยงาม "เมือง" และพื้นที่โดยรอบมักจะถูกใช้เป็นสถานที่ที่ผ่อนคลายในการเดินทั้งกลางวันและกลางคืน
+                        </p>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>
+                        <h5 class="text-center">พิพิธภัณฑ์ลูฟร์(Musee Du Lurve)</h5>
+                         <img src="static/images/architecluf.jpg" class="center" alt="Cinque Terre" width="320" height="180" > 
+
+                        <p>พิพิธภัณฑ์ลูฟวร์ หรือ Musee Du Lurve ในภาษาฝรั่งเศส เป็นพิพิธภัณฑ์ซึ่งรวบรวมผลงานศิลปะสำคัญแห่งหนึ่งของโลก ตั้งอยู่ที่เมืองปารีส แคว้นอิล-เดอ-ฟรองซ์  ประเทศฝรั่งเศส
+                        พีระมิดแก้วแห่งนี้ สร้างเสร็จเมื่อปี 1989 เพื่อเป็นทางเข้าหลักของพิพิธภัณฑ์ลูฟวร์ สถานที่ท่องเที่ยวชื่อดังในกรุงปารีส ประเทศฝรั่งเศส
+                        ทุกวันนี้ พีระมิดลูฟวร์เป็นมากกว่าแลนด์มาร์กหรือฉากหลังให้นักท่องเที่ยวถ่ายรูปสวยๆแต่กลายเป็นสถาปัตยกรรมที่สะท้อนความหรูหราและโมเดิร์นของเมืองน้ำหอม
+                        ด้วยการชวนย้อนไปสำรวจและทำความรู้จักประวัติศาสตร์ของพีระมิดโลกยุคใหม่แห่งนี้ที่ผ่านร้อนผ่านหนาวมาไม่น้อย
+                        ผู้ริเริ่มการสร้างพีระมิดลูฟวร์ คือ ฟร็องซัว มีแตร็อง อดีตประธานาธิบดีของฝรั่งเศส เขาสั่งให้สร้างพีระมิดแห่งนี้ในปี 1984 เพื่อแก้ปัญหาทางเข้าของพิพิธภัณฑ์ลูฟวร์ในตอนนั้น ซึ่งไม่สามารถรองรับนักท่องเที่ยวที่มีจำนวนมากในแต่ละวันได้ และมีทางเดินเหมือนเขาวงกต ทำให้ผู้คนหลงทางเป็นประจำ นอกจากนี้ยังมีข้อจำกัดในการใช้พื้นที่อีกหลายส่วน
+                        ผู้ออกแบบพีระมิดลูฟวร์ คือ ไอ. เอ็ม. เป่ย (I. M. Pei หรือ Leoh Ming Pei) สถาปนิกสัญชาติจีน-อเมริกัน ผู้โด่งดังจากผลงานการออกแบบห้องสมุด John F. Kennedy, National Gallery of Art และได้รับรางวัลพริตซ์เกอร์ (Pritzker Prize) ในปี 1983ไอ. เอ็ม. เป่ย ศึกษาประวัติศาสตร์ของแลนด์สเคปและสถาปัตยกรรมฝรั่งเศสอย่างลึกซึ้งจนได้ไอเดียออกแบบพีระมิดลูฟวร์ โดยเขาเลือกปรับใต้ดินของ Cour Napoléon ลานกว้างหน้าพิพิธภัณฑ์ เพื่อสร้างเป็นโถงต้อนรับและพื้นสาธารณะ รวมทั้งทางเข้าหลักทางใหม่
+                        </p>
+
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                        <h5 class="text-center">ทัชมาฮาล (Taj Mahal)</h5>
+                        <img src="static/images/architecทัชมาฮาล.jpg" class="center" alt="Cinque Terre" width="320" height="180" > 
+                
+                        <p>ทัชมาฮาล เป็นสถาปัตยกรรมหินอ่อนที่สวยที่สุดแห่งหนึ่งของโลก ตั้งอยู่ในสวนริมฝั่งแม่น้ำยมุนา ในเมืองอัครา ถูกสร้างด้วยหินอ่อนสีขาว ศิลาแลง ประดับลวดลายเครื่องเพชร พลอย หิน โมราและเครื่องประดับจากมิตรประเทศ ได้รับคำรับรองว่าสร้างขึ้นด้วยสัดส่วนที่วิจิตรและงดงามที่สุด กว้างยาวด้านละ 100 เมตร สูง 60 เมตร มีผู้สร้างและออกแบบร่วม 20,000 คน การก่อสร้างกินเวลานานถึง 22 ปี ทัชมาฮาลมีเนื้อที่ประมาณ 42 เอเคอร์ 
+                        นายช่างที่ออกแบบ ชื่อ อุสตาด ไอซา ถูกประหารชีวิตเพื่อมิให้ไปออกแบบสถาปัตยกรรมใด ๆ ที่สวยกว่าได้
+                        </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <h5 class="text-center">เมืองเวนิส (Venice)</h5>
+                         <img src="static/images/architecเวนิช.jpg" class="center" alt="Cinque Terre" width="320" height="180" > 
+
+                        <p>
+                          เมืองเวนิส (Venice) หรือที่ชาวอิตาลีเรียกกันว่า เวเน็ตเซีย (Venezia) เป็นเมืองหลวงของแคว้นเวเนโต (Veneto) ซึ่งเป็นแคว้นที่มั่งคั่งและเป็นแหล่งอุตสาหกรรมที่สำคัญที่สุดของประเทศอิตาลี มีประชากรมากกว่าหกแสนสามหมื่นคน 
+                        มหาสมุทรคอยปกป้องกรุงเวนิส เสริมความมั่งคั่งให้แก่อิตาลี เวนิสคือศูนย์กลางการค้าทั้งฝั่งตะวันออกและฝั่งตะวันตก ที่รวมความสวยงามอันน่าตื่นตาเอาไว้จนได้ชื่อว่าเป็น ‘ห้องรับแขกแห่งยุโรป’
+                        ในอดีต เวนิสมีพื้นที่เป็นเพียงสันดอนตมกลางทะเลสาบ ไม่มีผู้คนอยู่อาศัย ในเวลาต่อมาเมื่อคริสต์ศตวรรษที่ 5 มีคนกลุ่มแรกขึ้นมาอาศัยยังเวนิสแห่งนี้เนื่องจากถูกรุกรานจากอนารยชน พื้นที่ในเวนิสไม่มีน้ำจืด ผู้คนจึงขุดดินเป็นวงกว้างขนาดใหญ่แล้วก่ออิฐรองน้ำฝนไว้ดื่ม  ส่วนที่อยู่อาศัยนั้นก็ปลูกขึ้นตามแนวของน้ำที่ไหลผ่านและใช้ทะเลสาบแห่งนี้ในการเดินทาง ทั่วทั้งเกาะเวนิส  มีพื้นที่ให้รถไฟและรถยนต์เข้าถึงได้เพียงส่วนเล็กๆเท่านั้น การเดินทางภายในเกาะจึงต้องอาศัย ‘เรือ’ เป็นหลัก โดยพาหนะเด่นๆที่นักท่องเที่ยวชอบนั่งก็คือ 'เรือกอนโดลา (Gondola) ' ที่ทุกคนเคยได้ยินกันนั่นเอง
+                        ในเมืองแห่งนี้ มีคลองมากกว่า 150 คลองลัดเลาะไปทั่วทั้งเมือง แต่นอกจากจะมีคลองให้ได้นั่งเรือผ่านไปชมสถานที่ต่างๆรอบเมืองแล้ว เวนิสยังมีเกาะเล็กเกาะใหญ่ให้เที่ยวชมอีกราว 118 เกาะ และเชื่อมต่อกันด้วยสะพานมากกว่า 400 สะพาน แต่สำหรับผู้พิการหรือผู้สูงอายุก็ไม่ต้องห่วงว่าจะเดินทางลำบาก เพราะที่นี่เขาได้จัดเส้นทางไว้สำหรับผู้พิการและผู้สูงอายุ ซึ่งเป็นทางลาดไว้ให้เดินทางทั่วเกาะได้
+                        </p>
+
+                        
+                        </td>
+                    </tr>
+            
+            </table>
+            </div>
+<br>
+
+<div class="container-fluid">
+  <h3 class="text-dark" >แหล่งข้อมูลอ้างอิง</h3>
+  <br>
+     <a class="p-3 mb-2 bg-warning text-dark" href="https://board.postjung.com/1230717">วาเลนเซีย</a>
+    <a class="p-3 mb-2 bg-warning text-dark" href="https://becommon.co/world/louvrepyramid-30thanniversaries/">พิพิธภัณฑ์ลูฟร์</a>
+    <a class="p-3 mb-2 bg-warning text-dark" href="https://sites.google.com/site/wonderplaceintheworld/sing-mhascrry-ni-yukh-him/thach-ma-hal">ทัชมาฮาล</a>
+    <a class="p-3 mb-2 bg-warning text-dark" href="https://www.worldtourcenter.com/%e0%b9%80%e0%b8%a7%e0%b8%99%e0%b8%b4%e0%b8%aa-venice">เวนิส</a>
+</div>
+    <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color:#A0522D;">
+  <ul class="navbar-nav" >
+    <li class="nav-item" >
+      <a class="nav-link" href="https://pixabay.com/th/photos/search/architecture/">แหล่งอ้างอิงรูปภาพประกอบ pixabay.com</a>
+    </li>
+  </ul>
+</nav>   
+
+{% block content %}
+{% endblock %}
+</body>
+</html>

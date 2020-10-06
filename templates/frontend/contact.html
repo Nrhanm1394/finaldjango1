@@ -1,0 +1,55 @@
+{% comment %} {% extends 'frontend/base.html' %} {% endcomment %}
+{% block content %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link rel="stylesheet" href="{% static './lib/bootstrap/css/bootstrap.min.css' %}"> 
+    <link rel="stylesheet" href="{% static './lib/fontawesome/css/all.min.css' %}"> 
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #033a61;">
+        <a class="navbar-brand" href="{% url 'base' %}">CONTACT </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link px-1 mx-1 py-3 my-n2" href="{% url 'nature' %}" >Nature Travel</a>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="{% url 'architecture' %}" >Architecture Travel</a>
+                </li>
+            </ul>
+
+        </div>
+        <button type="button" class="btn btn-outline-primary"><a class="navbar-brand" href="{% url 'base' %}">Home</a></button>
+        <button type="button" class="btn btn-outline-primary"><a class="navbar-brand" href="{% url 'contact' %}">Contact</a></button>
+
+       
+    </nav>
+    <div class="container pt-3" >
+        <h1 >CONTACT</h1>
+    <div>
+    <table>
+    <td>
+    <a class="nav-link text-center text-dark" href="https://www.facebook.com/noohan.abuneepoh" > <img src="static/images/FB.png" class="img-circle" alt="Cinque Terre" width="55" height="auto" ><p>Facebook : Nureeham Abuneepoh</p></a>
+    
+    </td>
+    <td>
+    <a class="nav-link text-center text-dark" href="https://www.instagram.com/__nrham/" > <img src="static/images/IG.jpg" class="img-circle" alt="Cinque Terre" width="50" height="55" >  <p>Instagram : __nrham</P></a>
+  
+    </td>
+    </table>
+    </div>
+
+    </div>
+
+{% endblock %}
+</body>    
+</html>

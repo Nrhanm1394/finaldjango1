@@ -1,0 +1,117 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static './lib/bootstrap/css/bootstrap.min.css' %}"> 
+    <link rel="stylesheet" href="{% static './lib/fontawesome/css/all.min.css' %}"> 
+</head>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body style="background-color:#CEE5FB;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #033a61;">
+        <a class="navbar-brand" href="{% url 'base' %}">TRAVELLIFE </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link px-1 mx-1 py-3 my-n2" href="{% url 'nature' %}" >Nature Travel</a>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="{% url 'architecture' %}" >Architecture Travel</a>
+                </li>
+            </ul>
+
+        </div>
+        <button type="button" class="btn btn-outline-primary"><a class="navbar-brand" href="{% url 'contact' %}">Contact</a></button>
+
+       
+    </nav>    
+    <table class="table">
+            <tr>
+                <th><ul class="nav justify-content-center">
+                    <li class="nav-item">
+                           <div class="container pt-3" >
+        <h1 class="text-center">TRAVEL IN LIFE</h1>
+    </div>
+                    </li>
+                   
+                </ul></th>
+                <th></th>
+                <th></th>
+            </tr>
+    </table>
+
+            <div class="" style="">
+            <table class="container">
+                    <tr>
+                    <td>
+                        <th>
+                         <img src="static/images/image6.jpg" class="img-circle" alt="Cinque Terre" width="320" height="150" >
+                        <a class="nav-link text-center text-dark" href="{% url 'nature' %}" >Nature Travel</a>
+                        </th>
+                    </td>    
+                    <td>
+                        <th> 
+                        <img src="static/images/natureป่าสน.jpg" class="img-circle" alt="Cinque Terre" width="320" height="150" >
+                        <a class="nav-link text-center text-dark" href="{% url 'nature' %}" >Nature Travel</a>
+                        </th>
+                    </td>    
+                    </tr>
+            
+            </table>
+                     <table class="container">
+                    <tr>
+                    <td class="align-bottom">
+                        <th>
+                         <img src="static/images/architecluf.jpg" class="img-circle" alt="Cinque Terre" width="320" height="150" >
+                         <a class="nav-link text-center text-dark" href="{% url 'architecture' %}" >Architecture Travel</a>
+                         </th>
+                    </td>
+                    <td>
+         
+                        <th>
+                        <img src="static/images/architecเวนิช.jpg" class="img-circle" alt="Cinque Terre" width="320" height="150" > 
+                        <a class="nav-link text-center text-dark" href="{% url 'architecture' %}" >Architecture Travel</a>
+                        </th>
+                    </td>
+                    </tr>
+            
+            </table>
+            </div>
+<br>
+
+<div class="container-fluid">
+  <h3>Endless journey</h3>
+  <p>
+  Endless journey  Because traveling to a place always has something that will make us passionate about that place.  Meet different people  Cultural diversity  A variety of traditions and languages  Or even the environment  Complete nature  Always makes me passionate about traveling in places to meet new things
+  </p>
+  </div>
+<nav class="navbar navbar-expand-lg navbar-dark"  style="background-color:#033a61;">
+  <ul class="navbar-nav" >
+    <li class="nav-item" >
+      <a class="nav-link" href="https://pixabay.com/th/photos/">แหล่งอ้างอิงรูปภาพประกอบ pixabay.com</a>
+    </li>
+  </ul>
+</nav>
+
+       
+    {% block content %} 
+    {% endblock %} 
+    <script src="{% static './lib/jquery/jquery-2.2.4.js' %}"></script>  
+    <script src="{% static './lib/popper/popper.min.js' %}"></script>  
+    <script src="{% static './lib/bootstrap/js/bootstrap.min.js' %}"></script> 
+</body>
+</html>

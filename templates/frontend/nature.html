@@ -1,0 +1,157 @@
+{% comment %} {% extends 'frontend/base.html' %} {% endcomment %}
+{% comment %} {% block title %} nature {% endblock %} {% endcomment %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="style.css">
+      <title>{% block title1 %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static './lib/bootstrap/css/bootstrap.min.css' %}"> 
+    <link rel="stylesheet" href="{% static './lib/fontawesome/css/all.min.css' %}"> 
+ 
+
+</head>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body background="static/images/bg1.jpg">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#212D33 ;">
+        <a class="navbar-brand" href="{% url 'nature' %}">NATURE</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link px-1 mx-1 py-3 my-n2" href="{% url 'nature' %}" >Nature Travel</a>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="{% url 'architecture' %}" >Architecture Travel</a>
+                </li>
+            </ul>
+
+        </div>
+        <button type="button" class="btn btn-outline-dark"><a class="navbar-brand" href="{% url 'base' %}">Home</a></button>
+        <button type="button" class="btn btn-outline-dark"><a class="navbar-brand" href="{% url 'contact' %}">Contact</a></button>
+       
+    </nav> 
+    <table>
+                <table>
+            <tr>
+                <th><ul class="nav justify-content-center">
+                    <li class="nav-item">
+                           <div class="container pt-3" >
+        <h1 class="text-white" >NATURE</h1>
+        <h5 class="text-center text-white">ธรรมชาติ</h5>
+
+    </div>
+                    </li>
+                   
+                </ul></th>
+                <th></th>
+                <th></th>
+            </tr>
+    </table>
+
+            <div class="" style="">
+            <table class="container">
+                    <tr>
+                      <tr>
+                        <td>
+                            <h5 class="text-center text-white">ป่าสนเขาหรือป่าสน(Coniferous Forest หรือ Pine Forest)</h5>
+                         <img src="static/images/natureป่าสน.jpg" class="center" alt="Cinque Terre" width="320" height="180" > 
+                         
+
+                        <p class="text-white">
+                        ป่าสนเขาหรืออาจเรียกอีกอย่างว่า ป่าสนในประเทศไทยมักปรากฏอยู่ตามภูเขาสูงเป็นส่วนใหญ่ซึ่งเป็นพื้นที่ซึ่งมีความสูงจากระดับน้ำทะเลตั้งแต่ 700 เมตรขึ้นไป โดยทั่วไปมักจะขึ้นอยู่ในที่ซึ่งดินไม่ค่อยมีความอุดมสมบูรณ์มากนัก มีความเป็นกรดสูง มีสภาพภูมิอากาศที่มีอุณหภูมิค่อนข้างต่ำเป็นระยะเวลายาวนานและยังมีความแห้งแล้งที่ป่าดิบปรับตัวได้ยาก
+                         </p>
+                        </td>
+                    </tr>                   
+                    </tr>
+                    <tr>
+                      <tr>
+                        <td>
+                          <h5 class="text-center text-white">แม่น้ำตาปี</h5>
+                         <img src="static/images/natureตาปี.jpg" class="center" alt="Cinque Terre" width="320" height="180" > 
+                       
+
+                        <p class="text-white">
+                        แม่น้ำตาปี เป็นแม่น้ำสายใหญ่ที่สุดในภาคใต้ของประเทศไทย มีต้นกำเนิดจากเทือกเขาหลวง อำเภอพิปูน จังหวัดนครศรีธรรมราช และไหลสู่อ่าวไทยที่อ่าวบ้านดอน อำเภอเมืองสุราษฎร์ธานี จังหวัดสุราษฎร์ธานี นักปราชญ์ชาวกรีกนามว่าปโตเลมี ได้กล่าวถึง แม่น้ำอัตตาบาส์ ซึ่งหมายถึง แม่น้ำตาปี
+                        ชื่อแม่น้ำตาปี พระบาทสมเด็จพระมงกุฏเกล้าเจ้าอยู่หัว ทรงพระกรุณาโปรดเกล้าฯ พระราชทาน เมื่อวันที่ 29 กรกฎาคม 2458 โดยมี มหาอำมาตย์โท พระยามหาอำมาตยาธิบดี เสนาบดีกระทรวงมหาดไทย ลงนามสนองฯ ณ วันที่ 29 สิงหาคม 2458
+                        เดิมมีชื่อว่า "แม่น้ำหลวง" เพราะมีต้นกำเนิดอยู่ที่ภูเขาหลวงซึ่งเป็นยอดเขาที่สูงที่สุดของเทือกเขานครศรีธรรมราช อยู่ในเขตพื้นที่ อำเภอพิปูน จังหวัดนครศรีธรรมราช ไหลผ่านอำเภอฉวาง อำเภอทุ่งใหญ่ จังหวัดนครศรีธรรมราช ผ่าน อำเภอพระแสง อำเภอเวียงสระ อำเภอบ้านนาสาร อำเภอเคียนซา อำเภอพุนพิน และไหลออกสู่อ่าวไทยที่อำเภอเมืองสุราษฎร์ธานี จังหวัดสุราษฎร์ธานี เป็นแม่น้ำสายยาวที่สุดของภาคใต้
+                       </p>
+                        </td>
+                    </tr>                   
+                    </tr>
+                            <tr>
+                      <tr>
+                        <td>
+                         <h5 class="text-center text-white">ดอยหัวเสือ</h5>
+                         <img src="static/images/natureดอยหัวเสือ.jpg" class="center" alt="Cinque Terre" width="320" height="180" > 
+                        
+
+                        <p class="text-white"> 
+                        ดอยหัวเสือ ตั้งอยู่ทางทิศตะวันออกเฉียงใต้ ของที่ทำการอุทยานแห่งชาติดอยอินทนนท์ ที่ตั้งตามพิกัดภูมิศาสตร์ พิกัด UTM (WGS 1984) X 453112.655880, Y 2045411.674879 ละติจูด 18.498635, ลองจิจูด 98.555831 สูงจากระดับน้ำทะเล 1,881 เมตร  สูงเป็นอันดับที่ 4 ของอุทยานฯ  ลักษณะเป็นรูปจมูกเสือ จึงเป็นที่มาของชื่อ ดอยหัวเสือ สภาพป่าบริเวณนี้จะเป็นป่าสนสลับป่าดิบเขา จะพบกุหลาบพันปีสามสีภูกระดึงในช่วงเดือนพฤษภาคม-มิถุนายน และ ว่านมียับ ซึ่งเป็นพืชล้มลุก บรรยากาศสองข้างทางต้นไม้ขนาดใหญ่ และต้นสนสามใบ รวมถึง "ต้นไม้ใส่เสื้อ" หรือ "ป่าโบราณ"  เพราะสภาพอากาศที่ชุ่มชื้น และด้วยความสูง 1,881 เมตร ทำให้ลำต้นของต้นไม้เกิด ไลเคน มอส และเฟิน อาศัยอยู่เป็นจำนวนมาก
+                        บนยอดเขาสามารถเห็นวิวทิวทัศน์ได้เกือบ 360 องศา เนื่องจากสภาพค่อนข้างโล่ง แต่ต้องระมัดระวังพื้นที่จะค่อนข้างลาดชัน จากจุดชมวิวสามารถมองเห็นหมู่บ้านกะเหรี่ยงทางแม่แจ่ม และยอดเทือกเขาดอยอินทนนนท์
+                       </p>
+                        </td>
+                    </tr>                   
+                    </tr>
+                    <tr>
+                      <tr>
+                        <td>
+                        <h5 class="text-center text-white">ดอยอินทนนท์</h5>
+                         <img src="static/images/natureดอยอินทนนท์.jpg" class="center" alt="Cinque Terre" width="320" height="180" > 
+                         
+
+                        <p class="text-white">
+                        ดอยอินทนนท์ ถูกประกาศให้เป็นอุทยานแห่งชาติเมื่อปี พ.ศ. 2515 ถือเป็นอุทยานแห่งชาติลำดับที่ 6 ของประเทศไทย มีพื้นที่ 482.4 ตารางกิโลเมตร ครอบคลุมพื้นที่ในเขตอำเภอจอมทอง อำเภอแม่แจ่ม อำเภอแม่วาง และกิ่งอำเภอดอยหล่อ จังหวัดเชียงใหม่ “ดอยอินทนนท์” แต่เดิมมีชื่อว่า “ดอยหลวง” หรือ “ดอยอ่างกา” ดอยหลวง มาจากขนาดของดอยที่ใหญ่มาก ชาวบ้านจึงเรียกกันว่า “ดอยหลวง” (หลวง เป็นภาษาเหนือ แปลว่า ใหญ่)                    
+                      </p>
+                        </td>
+                    </tr>                   
+                    </tr>
+                     <tr>
+                      <tr>
+                        <td>
+                        <h5 class="text-center text-white">อ่างกาหลวง</h5>
+                         <img src="static/images/natureดอยอ่างกา.jpg" class="center" alt="Cinque Terre" width="320" height="180" > 
+                         
+
+                        <p class="text-white">
+                       อ่างกาหลวง ซึ่งตั้งอยู่บนดอยอินทนนท์ไก้ลกับจุด สูงสุดแดนสยาม เป็นเส้นทางศึกษาธรรมชาติเล็กๆระยะทางประมาน 300 เมตร แต่ภายในเส้นทางเดินนั้นให้บรรยากาศที่เหมือนกับป่าดึกดำบรรพ์มากๆเพราะว่าตลอดทั้งเส้นทางนั้นเต็มไปด้วย มอส เฟิร์น ที่เกาะเต็มไปหมดตลอดเส้นทางเดินและป่าที่หนาทึบ เป็นป่าที่อุดมสมบูรณ์ทุกฤดูกาลแต่ถ้าเป็นหน้าฝนจะได้บรรยากาศที่ฟินที่สุด
+                       </p>
+                        </td>
+                    </tr>                   
+                    </tr>
+                            
+            </table>
+            </div>
+
+<br>
+
+<div class="container-fluid">
+  <h3 class="text-white" >แหล่งข้อมูลอ้างอิง</h3>
+  <br>
+     <a class="p-3 mb-2 bg-dark text-white" href="https://saowalakmim11.wordpress.com/%E0%B8%AD%E0%B8%B2%E0%B8%93%E0%B8%B2%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3-%E0%B8%AD%E0%B8%B2%E0%B8%93%E0%B8%B2%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%95%E0%B8%B4%E0%B8%AA/%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B8%AA%E0%B8%99/">ป่าสนเขาหรือป่าสน</a>
+    <a class="p-3 mb-2 bg-dark text-white" href="https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%B2%E0%B8%9B%E0%B8%B5">แม่น้ำตาปี</a>
+    <a class="p-3 mb-2 bg-dark text-white" href="https://pantip.com/topic/37356002">ดอยหัวเสือ</a>
+    <a class="p-3 mb-2 bg-dark text-white" href="https://travel.mthai.com/region/north/99627.html">ดอยอินทนนท์</a>
+    <a class="p-3 mb-2 bg-dark text-white" href="https://thegarden-th.com/%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87/">อ่างกาหลวง</a>
+</div>
+    <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color:#212D33;">
+  <ul class="navbar-nav" >
+    <li class="nav-item" >
+      <a class="nav-link" href="https://pixabay.com/th/photos/search/nature/">แหล่งอ้างอิงรูปภาพประกอบ pixabay.com</a>
+    </li>
+  </ul>
+</nav>
+{% block content %}
+{% endblock %}
+</body>
+</html>
